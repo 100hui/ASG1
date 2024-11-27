@@ -1,7 +1,9 @@
-html, body, div, ul, li{margin: 0 auto;
+html, body, div, ul, li{
+    margin: 0 auto;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     color: #CCCCCC;}
+
 .nav .nav_ul li a {
     color: white; 
     text-decoration: none; }
@@ -9,57 +11,84 @@ html, body, div, ul, li{margin: 0 auto;
 .nav .nav_ul li a:hover {
     color:#A3E7F2;}
 ul, li{list-style-type: none}
-body{  -webkit-text-size-adjust:none; 
+
+body{
+    -webkit-text-size-adjust:none; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: black;}
+    background-color: black;
+    }
 a{ text-decoration: none; }
 
 a:focus,input:focus,select:focus { outline: none; }
 
+/* menu bar and logo */
 .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
     position: relative;
     width: auto;
     height: 90px;
+    padding: 0 20px; 
+    box-sizing: border-box; 
     }
 .logo{
     float: left;
     margin-top: 25px;
-    margin-left: 100px;
+    /* margin-left: 25px; */
+    max-width: 600px; 
+    height: auto;
     }
-.nav_con {
-    position: relative;
-    height: 90px;
-    width: auto;
-    background-color: #000000;
+.nav_ul {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
     }
-.nav_li{
-    position: absolute;
-    bottom: 0;
-    width: 0;
-    height: 3px;
-    } 
-.nav .nav_ul {
-    float: left;
-    margin-left: 80px;
+    
+    .nav_li {
+        text-align: center;
+        line-height: 90px;
+        position: relative;
+        white-space: nowrap; 
     }
-.nav .nav_ul li {
-    float: left;
-    position: relative;
-    text-align: center;
-    line-height: 90px;
-    width: 150px;
-    font-size: 16px;
+    
+    .nav_li div {
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        background-color: #A3E7F2;
+        transition: width 0.3s ease;
     }
-.nav_li div {
-    position: absolute;
-    bottom: 0;
-    width: 0;
-    height: 3px;
+    
+    .nav_li:hover div {
+        width: 100%;
     }
-.nav ul li{
-    width: 100%;
+    
+    /* Responsive Design: Breakpoints */
+    @media (max-width: 768px) {
+        .nav {
+            flex-direction: column; /* Stack items vertically on small screens */
+            height: auto;
+        }
+    
+        .nav_ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    
+        .logo {
+            margin-bottom: 10px;
+        }
+    
+        .nav_li {
+            font-size: 14px;
+            line-height: 60px;
+        }
     }
 
+    /* news */
 .news-container{
     font-family: 'Times New Roman', Times, serif;
     width: 80%;
@@ -104,4 +133,81 @@ a:focus,input:focus,select:focus { outline: none; }
     color: #848484;
     font-size: 1em;
     white-space: nowrap;
+}
+
+/* Container for the entire recommendation section */
+.recommend-container {
+    display: flex;
+    width: 80%;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.r-title{
+    font-family: 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: 0 auto;
+    color: #8dc6ef;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 5px
+}
+/* Individual recommendation items */
+.recommend-item {
+    position: relative;
+    width: 30%; 
+    height: 300px; 
+    overflow: hidden; 
+    border-radius: 8px; 
+    text-decoration: none;
+}
+
+.recommend-item:hover {
+    transform: scale(1.05); 
+}
+
+/* Image inside each item */
+.recommend-item img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+/* Overlay for text */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    opacity: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.recommend-item:hover .overlay {
+    opacity: 1; 
+}
+
+/* Overlay title */
+.overlay h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Overlay description */
+.overlay p {
+    margin-top: 10px;
+    font-size: 14px;
 }
