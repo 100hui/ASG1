@@ -6,20 +6,27 @@ html, body, div, ul, li{
 
 .nav .nav_ul li a {
     color: white; 
-    text-decoration: none; }
+    text-decoration: none; 
+    }
     
 .nav .nav_ul li a:hover {
     color:#A3E7F2;}
-ul, li{list-style-type: none}
+ul, li{
+    list-style-type: none
+    }
 
 body{
     -webkit-text-size-adjust:none; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
     }
-a{ text-decoration: none; }
+a{
+    text-decoration: none; 
+    }
 
-a:focus,input:focus,select:focus { outline: none; }
+a:focus,input:focus,select:focus { 
+    outline: none; 
+    }
 
 /* menu bar and logo */
 .nav{
