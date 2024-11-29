@@ -71,29 +71,6 @@ a:focus,input:focus,select:focus {
     .nav_li:hover div {
         width: 100%;
     }
-    
-    /* Responsive Design: Breakpoints */
-    @media (max-width: 768px) {
-        .nav {
-            flex-direction: column; /* Stack items vertically on small screens */
-            height: auto;
-        }
-    
-        .nav_ul {
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-    
-        .logo {
-            margin-bottom: 10px;
-        }
-    
-        .nav_li {
-            font-size: 14px;
-            line-height: 60px;
-        }
-    }
 
     /* news */
 .news-container{
@@ -142,6 +119,37 @@ a:focus,input:focus,select:focus {
     white-space: nowrap;
 }
 
+
+/* Videos Section */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%; 
+    color: #8dc6ef;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.video-title {
+    text-align: left; 
+    margin-left: 0; 
+    margin-bottom: 20px;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    width: 100%; 
+}
+
+iframe {
+    width: 100%; 
+    height: auto; 
+    aspect-ratio: 16 / 9; 
+    border: none; 
+}
+
 /* Container for the entire recommendation section */
 .recommend-container {
     display: flex;
@@ -156,7 +164,6 @@ a:focus,input:focus,select:focus {
     width: 80%;
     margin: 0 auto;
     color: #8dc6ef;
-    font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 20px;
     padding-bottom: 5px
@@ -217,4 +224,31 @@ a:focus,input:focus,select:focus {
 .overlay p {
     margin-top: 10px;
     font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .videos {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+    .nav {
+        flex-direction: column; 
+        height: auto;
+    }
+
+    .nav_ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav_li {
+        font-size: 14px;
+        line-height: 60px;
+    }
 }

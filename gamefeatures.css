@@ -1,5 +1,3 @@
-
-
 body {
     background-image: url(images/background.png);
     background-repeat: no-repeat;
@@ -113,27 +111,30 @@ input:checked + label .description {
 }
 
 @media (max-width: 768px) {
+    .wrapper {
+        height: auto; /* Let the height adjust based on content */
+        padding-top: 200px; /* Add some padding for the logo */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .container {
         flex-direction: column;
         gap: 20px;
-        width: 94%;
-        height: 94%;
-        margin-top: 20px;
+        width: 96%; /* Full width for mobile view */
+        height: 500px;
         align-items: center;
     }
 
     .card {
-        width: 80%;
-        height: 400px;
-        flex-direction: row;
+        width: 90%; /* Make the cards occupy most of the width */
+        height: 800px; /* Increase height to display the full picture */
+        flex-direction: column; /* Stack content vertically */
     }
 
     input:checked + label {
-        width: 100%;
-    }
-
-    input:checked + label ~ label {
-        transform: none;
+        width: 100%; /* Expand card width fully in mobile view */
+        height: 600px; /* Further increase height for the full image */
     }
 
     .card .icon {
@@ -147,13 +148,8 @@ input:checked + label .description {
         width: auto;
         font-size: 14px;
         line-height: 20px;
-        transform: translateY(30px);
-        opacity: 0;
-    }
-
-    input:checked + label .description {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1; /* Ensure visibility */
+        transform: translateY(0); /* Reset transformation */
     }
 }
 
