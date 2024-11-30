@@ -226,6 +226,10 @@ iframe {
     font-size: 14px;
 }
 
+/* footer */
+.footer{
+    margin-bottom: 20px;
+}
 
 @media (max-width: 768px) {
     .videos {
