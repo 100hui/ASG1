@@ -40,13 +40,13 @@ dropdown_list.addEventListener("click", (e) => {
     root.style.setProperty("--rotate-arrow", "0deg");
 });
 
-// handle Continue button click
+// handle continue button click
 continueButton.addEventListener("click", () => {
     const selectedServer = document.querySelector(".dropdown-title").textContent.trim();
     const gameId = gameIdInput.value.trim();
 
     if (selectedServer !== "Select your game server" && gameId) {
-        window.location.href = "index.html"; // redirect to index.html
+        window.location.href = "index.html"; 
     } else {
         alert("Please select a game server and enter your game ID.");
     }

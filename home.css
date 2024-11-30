@@ -4,6 +4,8 @@ html, body, div, ul, li{
     font-family: 'Times New Roman', Times, serif;
     color: #CCCCCC;}
 
+/* menu bar and logo */
+
 .nav .nav_ul li a {
     color: white; 
     text-decoration: none; 
@@ -28,7 +30,6 @@ a:focus,input:focus,select:focus {
     outline: none; 
     }
 
-/* menu bar and logo */
 .nav{
     display: flex;
     align-items: center;
@@ -52,27 +53,27 @@ a:focus,input:focus,select:focus {
     flex-wrap: wrap; 
     }
     
-    .nav_li {
-        text-align: center;
-        line-height: 90px;
-        position: relative;
-        white-space: nowrap; 
+.nav_li {
+    text-align: center;
+    line-height: 90px;
+    position: relative;
+    white-space: nowrap; 
+}
+    
+.nav_li div {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #A3E7F2;
+    transition: width 0.3s ease;
     }
     
-    .nav_li div {
-        position: absolute;
-        bottom: 0;
-        width: 0;
-        height: 3px;
-        background-color: #A3E7F2;
-        transition: width 0.3s ease;
-    }
-    
-    .nav_li:hover div {
-        width: 100%;
-    }
+.nav_li:hover div {
+    width: 100%;
+}
 
-    /* news */
+/* news */
 .news-container{
     font-family: 'Times New Roman', Times, serif;
     width: 80%;
@@ -120,7 +121,7 @@ a:focus,input:focus,select:focus {
 }
 
 
-/* videos Section */
+/* videos section */
 .video-container {
     display: flex;
     flex-direction: column;

@@ -97,6 +97,7 @@ input:checked + label .description {
     opacity: 1;
 }
 
+/* images inside each card */
 .card[for="c1"] {
     background-image: url('images/gamefeatures1.png');
 }
@@ -111,9 +112,11 @@ input:checked + label .description {
 }
 
 @media (max-width: 768px) {
+
+    /* adjust height and add some paddings for the logo */
     .wrapper {
-        height: auto; /* Let the height adjust based on content */
-        padding-top: 200px; /* Add some padding for the logo */
+        height: auto; 
+        padding-top: 200px; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -121,20 +124,21 @@ input:checked + label .description {
     .container {
         flex-direction: column;
         gap: 20px;
-        width: 96%; /* Full width for mobile view */
+        width: 96%; 
         height: 500px;
         align-items: center;
     }
 
     .card {
-        width: 90%; /* Make the cards occupy most of the width */
-        height: 800px; /* Increase height to display the full picture */
-        flex-direction: column; /* Stack content vertically */
+        width: 90%; 
+        height: 800px; 
+        flex-direction: column; 
     }
 
+    /* expand card width fully and increase height for the full image */
     input:checked + label {
-        width: 100%; /* Expand card width fully in mobile view */
-        height: 600px; /* Further increase height for the full image */
+        width: 100%; 
+        height: 600px; 
     }
 
     .card .icon {
@@ -148,8 +152,8 @@ input:checked + label .description {
         width: auto;
         font-size: 14px;
         line-height: 20px;
-        opacity: 1; /* Ensure visibility */
-        transform: translateY(0); /* Reset transformation */
+        opacity: 1; 
+        transform: translateY(0); 
     }
 }
 

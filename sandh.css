@@ -20,7 +20,7 @@ body {
     padding: 20px 0; 
 }
 
-/* Container for left and right sections */
+/* container for left and right sections */
 .container {
     display: flex;
     flex-direction: row;
@@ -30,6 +30,7 @@ body {
     margin-bottom: 200px;
 }
 
+/* left section */
 .left-section {
     display: flex;
     flex-direction: column;
@@ -52,6 +53,7 @@ body {
     margin: 0;
 }
 
+/* right section */
 .right-section {
     flex: 1; 
     background-color: rgba(0, 0, 0, 0.5); 
@@ -68,6 +70,7 @@ body {
     font-size: 5em;
 }
 
+/* mobile version */
 @media (max-width: 768px) {
     .main-container {
         width: 90%; 
