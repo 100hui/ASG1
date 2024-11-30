@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex; /* Flexbox for layout */
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    min-height: 100vh; /* Full screen height */
+    background: url(images/sandh-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 90%; /* Adjust the width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px 0; /* Add vertical spacing */
+}
+
+/* Container for left and right sections */
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 200px; /* Space between left and right sections */
+    width: 100%; /* Max width of the content */
+    margin-top: 200px; /* Add some top margin */
+    margin-bottom: 200px;
+}
+
+/* Left Section: Photo and Name */
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between the image and the name */
+    flex-shrink: 0; /* Prevent shrinking of the left section */
+}
+
+.left-section img {
+    width: 1000px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.left-section h3 {
+    font-size: 8em;
+    text-align: center;
+    color: rgb(155, 199, 217); /* Dark gray text */
+    margin: 0;
+}
+
+/* Right Section: Introduction */
+.right-section {
+    flex: 1; /* Allow it to take the remaining space */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 100px; /* Add spacing between text and container edge */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    line-height: 1.6; /* Line height for better readability */
+    color: white; /* Text color for readability */
+    font-size: 1em; /* Adjust font size if needed */
+}
+
+.right-section p {
+    margin: 0; /* Remove default margin from paragraph */
+    font-size: 5em;
+}
+
+/* Mobile-Specific Styles */
+@media screen and (max-width: 768px) {
+    /* Stack containers vertically */   
+    .container {
+        flex-direction: column; /* Change layout to vertical */
+        gap: 20px; /* Space between sections */
+        margin-top: 40px; /* Adjust margins for mobile */
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    /* Adjust left-section for mobile */
+    .left-section {
+        align-items: center; /* Center content */
+        text-align: center; /* Center-align text */
+    }
+
+    .left-section img {
+        width: 80%; /* Make image responsive */
+        max-width: 300px; /* Limit the image size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .left-section h3 {
+        font-size: 1.5em; /* Adjust font size for name */
+        color: rgb(155, 199, 217); /* Text color */
+    }
+
+    /* Adjust right-section for mobile */
+    .right-section {
+        padding: 20px; /* Reduce padding */
+        font-size: 1em; /* Adjust font size for readability */
+    }
+
+    .right-section p {
+        font-size: 1em; /* Adjust text size */
+    }
+
+    .main-container {
+        width: 96%; /* Ensure the container fits the screen */
+        margin: 0 auto; /* Center container */
+        padding: 10px 0; /* Adjust padding for mobile */
+    }
+}
