@@ -120,7 +120,7 @@ a:focus,input:focus,select:focus {
 }
 
 
-/* Videos Section */
+/* videos Section */
 .video-container {
     display: flex;
     flex-direction: column;
@@ -150,7 +150,7 @@ iframe {
     border: none; 
 }
 
-/* Container for the entire recommendation section */
+/* recommendation section container */
 .recommend-container {
     display: flex;
     width: 80%;
@@ -168,7 +168,7 @@ iframe {
     margin-bottom: 20px;
     padding-bottom: 5px
 }
-/* Individual recommendation items */
+/* individual recommendation items */
 .recommend-item {
     position: relative;
     width: 30%; 
@@ -182,7 +182,7 @@ iframe {
     transform: scale(1.05); 
 }
 
-/* Image inside each item */
+/* image inside each item */
 .recommend-item img {
     width: 100%; 
     height: 100%; 
@@ -190,7 +190,7 @@ iframe {
     display: block; 
 }
 
-/* Overlay for text */
+/* overlay for text */
 .overlay {
     position: absolute;
     top: 0;
@@ -213,14 +213,14 @@ iframe {
     opacity: 1; 
 }
 
-/* Overlay title */
+/* overlay title */
 .overlay h3 {
     margin: 0;
     font-size: 18px;
     font-weight: bold;
 }
 
-/* Overlay description */
+/* overlay description */
 .overlay p {
     margin-top: 10px;
     font-size: 14px;
