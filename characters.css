@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px; /
+    gap: 300px; /
 }
 
 .sandh {
@@ -42,10 +42,8 @@ body {
 }
 
 .sandh img {
-    width: 250px; 
+    width: auto; 
     height: 500px; 
-    border: 2px solid #fff; 
-    border-radius: 10px; 
     transition: transform 0.3s; 
 }
 
