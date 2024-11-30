@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    
+    <div class="login-container">
+        <!-- game title -->
+        <div class="game-title">
+            <img src="images/logo-transparent.png" alt="logo">
+        </div>
+
+        <!-- select game server -->
+        <div class="dropdown-container">
+            <button class="dropdown-button main-button">
+                <span class="dropdown-title">Select your game server</span>
+                <span class="dropdown-arrow"></span>
+            </button>
+            <div class="dropdown-list-container">
+                <div class="dropdown-list-wrapper">
+                    <ul class="dropdown-list"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enter Game ID -->
+        <div class="input-container">
+            <input type="text" id="game-id" placeholder="Enter your game ID">
+        </div>
+
+        <!-- Continue Button -->
+        <div class="button-container">
+            <button id="continue-button" class="continue-button">Continue</button>
+        </div>
+    </div>
+    <script src="login.js"></script>
 </body>
 </html>

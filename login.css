@@ -1,0 +1,160 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    background-image: url(images/login-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px;
+    padding: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-title img{
+    width: 200px;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.dropdown-container {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.dropdown-button {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50px;
+    background-color: rgba(150, 182, 209, 0.8);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+    transform: rotate(var(--rotate-arrow));
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.dropdown-list-container {
+    overflow: hidden;
+    max-height: var(--dropdown-height);
+    transition: max-height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.dropdown-list-wrapper {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgba(150, 182, 209, 0.9);
+    border-radius: 5px;
+}
+
+ul.dropdown-list {
+    list-style: none;
+}
+
+li.dropdown-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: var(--list-opacity);
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.list-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.input-container {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color:rgba(150, 182, 209, 0.9) ;
+}
+
+.input-container input:focus {
+    background-color: rgba(150, 182, 209, 0.9); 
+}
+
+/* Prevent the background from changing when the field is populated */
+.input-container input:valid {
+    background-color: rgba(150, 182, 209, 0.9); 
+}
+
+.input-container input::placeholder {
+    color: dimgray; 
+    opacity: 1;
+}
+
+.button-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.continue-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgba(60, 179, 113,0.8);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button:hover {
+    background-color: rgba(51, 151, 69,0.8);
+}
+
+@media (max-width: 768px) {
+    .login-container{
+        width: 90%;
+        margin-top: 200px;
+    }
+}
