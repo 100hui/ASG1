@@ -30,17 +30,17 @@ Here is the list of user stories and how my project is the best way to help them
 * Search Functionality: A search bar enabling users to quickly find specific content like characters, features, or guides. 
 
 ## Technologies Used
-+ HTML (https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
++ [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
     - Used to structure the content and layout of the website. 
-- CSS (https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
     - Used for styling the website, including layouts, colors, and responsive design. 
-* JavaScript (https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
     - This project uses JavaScript to add interactivity. 
-+ GitHub (https://github.com/)
++ [GitHub](https://github.com/)
     - Used as a repository to store the project and facilitate collaboration. 
-- Figma (https://www.figma.com/)
+- [Figma](https://www.figma.com/)
     - Used for collaborative design work and prototyping during the initial stages. 
-* VS Code (https://code.visualstudio.com/)
+* [VS Code](https://code.visualstudio.com/)
     - The primary code editor used for writing, debugging, and managing the project. 
 
 ## Testing 
