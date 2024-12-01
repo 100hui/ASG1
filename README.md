@@ -66,4 +66,42 @@ Here is the list of user stories and how my project is the best way to help them
     - Navigate to the Game Features page.
     - Confirm all feature cards display correctly and animations (e.g., expanding cards) work as expected.
     - Verify the page adjusts seamlessly on smaller screens.
-### Characters Page Testing
+### Characters Page Testing 
+1. Scenario: Validate Survivors and Hunters sections. 
+    - Visit the Characters page and check that both Survivors and Hunters sections load correctly.
+    - Click on character links/images to verify the backstories and skill details display properly.
+2. Scenario: Test mobile layout. 
+    - Confirm that the navigation bar slides with the content on both Survivors and Hunters pages.
+    - Verify images and text align correctly on small screens.
+### Login Page Testing 
+1. Scenario: Validate the login form. 
+    - Try to submit the form with one or both fields empty. Confirm an error message appears indicating required fields.
+### General Testing 
+1. Responsive Design: 
+    - Tested on different screen sizes (desktop, tablet, and mobile) to confirm that the layout adjusts correctly.
+    - Verified that mobile-only features, such as the navigation bar, are hidden on desktop.
+2. Browser Compatibility: 
+    - Tested the website on Google Chrome and Microsoft Edge to ensure consistent functionality and appearance. 
+3. Accessibility: 
+    - Confirmed the site is navigable using a keyboard and that screen readers correctly interpret key content. 
+### Bugs and Issues 
+1. Bug: Navigation bar overlap on small screens. 
+    - Issue: The fixed navigation bar occasionally overlapped with page content.
+    - Resolution: Added margin-top to content sections to prevent overlap.
+2. Bug: Card animations not triggering on mobile devices. 
+    - Issue: Touch input did not activate some hover-based effects.
+    - Resolution: Replaced hover effects with click-based animations for mobile users.
+### Future Testing Enhancements 
+1. Automate form validation and navigation testing using tools like Selenium or Cypress. 
+2. Perform extensive testing on more devices and browsers to identify edge cases. 
+
+## Credits
+### Content 
++ The text for the Background section was adapted from the [official Identity V website](https://idv.163.com/). 
+- Character backstories and descriptions (e.g., Survivors and Hunters) were referenced from the [Identity V Wiki](https://id5.fandom.com/wiki/Identity_V_Wiki) and [official Identity V website](https://idv.163.com/). 
+### Media 
++ The photos used in this site, including character images and background visuals, were sourced from the official Identity V social media and promotional materials.
+- Additional images were obtained from free and open-source platforms like Unsplash and Pexels, ensuring no copyright violations. 
+### Acknowledgements 
++ I received inspiration for this project from my passion for Identity V and its creative community. 
+- Special thanks to the Identity V community forums for providing valuable insights into the player experience and preferences. 
