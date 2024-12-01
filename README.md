@@ -13,3 +13,57 @@ Here is the list of user stories and how my project is the best way to help them
 + 'As a competitive player, I want to watch high-level match videos, so that I can improve my skills and strategies.' -- The homepage includes a section for match videos, allowing players to easily watch and learn from high-level gameplay. 
 - 'As a lore enthusiast, I want to read detailed backstories of Survivors and Hunters, so that I can dive deeper into the characters' narratives and connect with the game's universe.' -- The characters page showcases in-depth backstories and skills for both Survivors and Hunters, offering a comprehensive lore experience. 
 * 'As a mobile user, I want an interface optimized for small screens, so that I can easily navigate and interact with the website on the go.' -- The website is designed with a mobile-first approach, ensuring seamless navigation and interaction on smaller screens.
+
+## Features
+### Existing Features
++ Homepage: Provides users with the latest news, gameplay videos, and recommended articles to keep them updated and engaged. 
+- Background Page: Allows users to explore the game’s lore, backstory, and gothic themes, offering insight into the world of Identity V. 
+* Game Features Page: Highlights the game’s unique mechanics and features, helping users understand its asymmetrical gameplay and customization options. 
++ Characters Page: Divided into survivors and hunters sections, this page provides detailed backstories and skills, allowing players to connect with and strategize around their favorite characters. 
+- Machandise Page: A dedicated page showcasing game-related merchandise for fans to explore and purchase. 
+* Login Page: Offers a simple interface for players to log in using their game ID, enabling easy account access and connectivity. 
++ Mobile-Responsive Navigation: Ensures users can seamlessly navigate the site on mobile devices, with optimized layouts and a user-friendly design. 
+- Login Page: Offers a simple interface for players to log in using their game ID, enabling easy account access and connectivity. Users are required to fill out both the game ID section and drop-down session for server selection to complete the login process and continue. This ensures proper authentication and connection to the desired server.
+### Features Left to Implement 
++ In-Game Stats Integration: Allows users to log in and view their personal game statistics, like win rates, favorite characters, and match history. 
+- Community Page: A section for fans to share artwork, stories, or tips, fostering a stronger player community. 
+* Search Functionality: A search bar enabling users to quickly find specific content like characters, features, or guides. 
+
+## Technologies Used
++ HTML (https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+    - Used to structure the content and layout of the website. 
+- CSS (https://developer.mozilla.org/en-US/docs/Web/CSS)
+    - Used for styling the website, including layouts, colors, and responsive design. 
+* JavaScript (https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - This project uses JavaScript to add interactivity. 
++ GitHub (https://github.com/)
+    - Used as a repository to store the project and facilitate collaboration. 
+- Figma (https://www.figma.com/)
+    - Used for collaborative design work and prototyping during the initial stages. 
+* VS Code (https://code.visualstudio.com/)
+    - The primary code editor used for writing, debugging, and managing the project. 
+
+## Testing 
+### Homepage Testing
+1. Scenario: Check news updates, videos, and recommended articles. 
+    - Navigate to the homepage. 
+    - Verify that the latest news and videos are displayed correctly. 
+    - Confirm that clicking on a recommended article opens the correct page. 
+    - Ensure all sections load and display properly on mobile and desktop screens. 
+2. Scenario: Test navigation to other sections. 
+    - Use the homepage navigation bar to visit all other pages (e.g., Background, Game Features, Characters, Login).
+    - Confirm the navigation links are functional and lead to the correct pages.
+### Background Page Testing 
+1. Scenario: Verify background content and design. 
+    - Visit the Background page.
+    - Confirm the text and images load correctly and match the game’s theme.
+    - Ensure the page adjusts properly on mobile devices.
+2. Scenario: Test navigation. 
+    - Use the mobile navigation bar to switch between other pages. 
+    - Confirm the bar slides with the content as expected. 
+### Game Features Page Testing 
+1. Scenario: Check game features carousel. 
+    - Navigate to the Game Features page.
+    - Confirm all feature cards display correctly and animations (e.g., expanding cards) work as expected.
+    - Verify the page adjusts seamlessly on smaller screens.
+### Characters Page Testing
